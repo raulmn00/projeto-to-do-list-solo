@@ -21,7 +21,11 @@ export function PaletaLista({ paletas, setPaletas }) {
 				return (
 					<PaletaItem
 						key={`paletaItem-${index}`}
+						id={paleta._id}
 						title={paleta.titulo}
+						descricao={paleta.descricao}
+						preco={paleta.preco}
+						sabor={paleta.sabor}
 					/>
 				);
 			})}
