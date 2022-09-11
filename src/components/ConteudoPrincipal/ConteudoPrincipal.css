@@ -1,0 +1,15 @@
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+section.secao-paletas-experimentadas {
+	text-align: center;
+}
+section.secao-paletas-nao-experimentadas {
+	text-align: center;
+}
+section.secao-paletas-favoritas {
+	text-align: center;
+}
