@@ -7,6 +7,7 @@ export function PaletaLista({ paletas, setPaletas }) {
 	const allPaletas = async () => {
 		const response = await apiHelper.findAllPaletas();
 		setPaletas(response);
+		console.log(response);
 	};
 
 	useEffect(() => {
@@ -25,6 +26,7 @@ export function PaletaLista({ paletas, setPaletas }) {
 						descricao={paleta.descricao}
 						preco={paleta.preco}
 						sabor={paleta.sabor}
+						imagem={paleta.foto}
 					/>
 				);
 			})}
