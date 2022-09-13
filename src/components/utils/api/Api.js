@@ -30,7 +30,7 @@ export const apiHelper = {
 		});
 	},
 	deletePaleta: async (id) => {
-		fetch(defaultUrl + `/delete/${id}`, {
+		fetch(defaultUrl + `/delete-palete/${id}`, {
 			method: 'DELETE',
 			headers: new Headers({ 'Content-Type': 'application/json' }),
 		});

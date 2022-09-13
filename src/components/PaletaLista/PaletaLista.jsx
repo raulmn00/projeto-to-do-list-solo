@@ -7,7 +7,6 @@ export function PaletaLista({ paletas, setPaletas }) {
 	const allPaletas = async () => {
 		const response = await apiHelper.findAllPaletas();
 		setPaletas(response);
-		console.log('response all paletas: ', response);
 	};
 
 	useEffect(() => {

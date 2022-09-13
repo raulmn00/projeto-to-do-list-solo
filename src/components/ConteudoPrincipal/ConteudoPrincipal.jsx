@@ -1,6 +1,5 @@
 import './ConteudoPrincipal.css';
 import { PaletaLista } from '../PaletaLista/PaletaLista.jsx';
-import { apiHelper } from '../utils/api/Api';
 
 export function ConteudoPrincipal({ paletasState, setPaletaState }) {
 	return (
