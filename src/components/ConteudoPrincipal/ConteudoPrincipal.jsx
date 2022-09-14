@@ -1,7 +1,12 @@
 import './ConteudoPrincipal.css';
 import { PaletaLista } from '../PaletaLista/PaletaLista.jsx';
 
-export function ConteudoPrincipal({ paletasState, setPaletaState }) {
+export function ConteudoPrincipal({
+	paletasState,
+	setPaletaState,
+	title,
+	setTitle,
+}) {
 	return (
 		<>
 			<main className="conteudo-principal">
@@ -9,6 +14,8 @@ export function ConteudoPrincipal({ paletasState, setPaletaState }) {
 					<PaletaLista
 						paletas={paletasState}
 						setPaletas={setPaletaState}
+						title={title}
+						setTitle={setTitle}
 					/>
 				</div>
 			</main>

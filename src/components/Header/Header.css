@@ -7,7 +7,7 @@
 }
 nav.navbar {
 	display: flex;
-	width: 100%;
+	width: 80%;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
