@@ -1,12 +1,12 @@
 import './Header.css';
 import { apiHelper } from '../utils/api/Api';
-import { Title } from '../Title/Title';
 
 export function Header({
 	setPaletasState,
 	functionAllPaletas,
-	title,
 	setTitle,
+	setShowForm,
+	showFormState,
 }) {
 	const paletaById = async () => {
 		const input = document.querySelector('#idPaleta');
@@ -14,6 +14,10 @@ export function Header({
 		const response = await apiHelper.findPaletaById(id);
 		setPaletasState([response]);
 		setTitle('Paleta Selecionada');
+	};
+
+	const handleShowForm = () => {
+		setShowForm(!showFormState);
 	};
 
 	const excluirPaleta = async () => {
@@ -56,7 +60,13 @@ export function Header({
 							Procurar
 						</button>
 					</div>
-					<p>Criar Paleta</p>
+					<button
+						onClick={() => {
+							handleShowForm();
+						}}
+					>
+						CRIAR PALETA
+					</button>
 				</nav>
 			</div>
 		</>

@@ -8,6 +8,7 @@ import { apiHelper } from './components/utils/api/Api';
 export function App() {
 	const [paletas, setPaletas] = useState([]);
 	const [title, setTitle] = useState('');
+	const [showForm, setShowForm] = useState(false);
 
 	const allPaletas = async () => {
 		const response = await apiHelper.findAllPaletas();
@@ -24,6 +25,8 @@ export function App() {
 						functionAllPaletas={allPaletas}
 						setTitle={setTitle}
 						title={title}
+						setShowForm={setShowForm}
+						showFormState={showForm}
 					/>
 				</div>
 				<div className="main-content">
@@ -32,6 +35,8 @@ export function App() {
 						setPaletaState={setPaletas}
 						setTitle={setTitle}
 						title={title}
+						showFormState={showForm}
+						functionAllPaletas={allPaletas}
 					/>
 				</div>
 				<div className="footer">

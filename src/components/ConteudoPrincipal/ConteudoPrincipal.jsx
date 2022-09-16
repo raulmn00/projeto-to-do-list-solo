@@ -7,12 +7,18 @@ export function ConteudoPrincipal({
 	setPaletaState,
 	title,
 	setTitle,
+	showFormState,
+	functionAllPaletas,
 }) {
 	return (
 		<>
 			<main className="conteudo-principal">
 				<div className="conteudo-principal-container">
-					<FormCreate setPaleta={setPaletaState} />
+					<FormCreate
+						setPaleta={setPaletaState}
+						showFormState={showFormState}
+						functionAllPaletas={functionAllPaletas}
+					/>
 					<PaletaLista
 						paletas={paletasState}
 						setPaletas={setPaletaState}
