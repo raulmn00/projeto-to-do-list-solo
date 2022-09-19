@@ -8,7 +8,7 @@ export function PaletaItem({ title, id, descricao, preco, sabor, imagem }) {
 			<img src={imagem} alt="imagem da paleta" />
 			<p>Descrição: {descricao}</p>
 			<p>Preço: R$ {preco}</p>
-			<p>Sabor: {sabor}</p>
+			<p>Sabor teste: {sabor}</p>
 		</div>
 	);
 }
