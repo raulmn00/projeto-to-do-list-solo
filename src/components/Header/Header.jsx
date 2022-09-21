@@ -33,7 +33,11 @@ export function Header({
 			<div className="header-container">
 				<h2 className="header-title">HEADER</h2>
 				<nav className="navbar">
-					<button type="button" onClick={functionAllPaletas}>
+					<button
+						type="button"
+						onClick={functionAllPaletas}
+						className="btnHeader"
+					>
 						Todas as paletas
 					</button>
 					<div className="deletePaleta">
@@ -44,7 +48,11 @@ export function Header({
 							id="excluirPaleta"
 							placeholder="Digite o ID: "
 						/>
-						<button type="button" onClick={excluirPaleta}>
+						<button
+							type="button"
+							onClick={excluirPaleta}
+							className="btnHeader"
+						>
 							Deletar
 						</button>
 					</div>
@@ -56,7 +64,11 @@ export function Header({
 							placeholder="Digite o Id: "
 							id="idPaleta"
 						/>
-						<button type="button" onClick={paletaById}>
+						<button
+							type="button"
+							onClick={paletaById}
+							className="btnHeader"
+						>
 							Procurar
 						</button>
 					</div>
@@ -64,6 +76,7 @@ export function Header({
 						onClick={() => {
 							handleShowForm();
 						}}
+						className="btnHeader"
 					>
 						CRIAR PALETA
 					</button>
