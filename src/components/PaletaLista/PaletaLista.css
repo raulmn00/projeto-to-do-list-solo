@@ -1,0 +1,16 @@
+.paletaItemContainer {
+	border: solid 2.5px white;
+	margin: 10px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: #1c1c1c;
+	color: white;
+	width: 100%;
+}
+
+.button-card {
+	cursor: pointer;
+}
